@@ -1,25 +1,17 @@
 const express = require("express");
-const cors = require("cors");
 const path = require("path");
 const app = express();
 
-// Middleware
-app.use(cors());
-app.use(express.json());
+// Serve static files
 app.use(express.static(path.join(__dirname, "public")));
 
-// Routes
+// Main route
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-// Error handling
-app.use((err, req, res, next) => {
-  console.error(err.stack);
-  res.status(500).send('Something broke!');
-});
-
-const PORT = process.env.PORT || 5000;
+// Start server
+const PORT = 3000;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });
