@@ -1,12 +1,53 @@
-# Trail-Utopia
+# Graph Visualizer
 
-It is pathfinding visualizer that contains the following algorithm:
-1. Dijkstra Algorithm(weighted)
-2. A Star(weighted)
-3. Greedy Best First Search(weighted)
-4. Swarm Optimization(weighted)
-5. breadth First Search(un-weighted)
-6. Depth First Search(un-weighted)
+A pathfinding visualizer that demonstrates various graph traversal and pathfinding algorithms.
 
-Visit the link below for its working:
-https://trail-utopia.herokuapp.com/
+## Features
+
+- Dijkstra Algorithm (weighted)
+- A\* Search (weighted)
+- Greedy Best First Search (weighted)
+- Swarm Optimization (weighted)
+- Breadth First Search (unweighted)
+- Depth First Search (unweighted)
+
+## Local Development Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/PanchamKumarr/Graph_Visual.git
+cd Graph_Visual
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm start
+```
+
+4. Open your browser and visit:
+
+```
+http://localhost:3000
+```
+
+## Development
+
+For development with auto-reload:
+
+```bash
+npm run dev
+```
+
+## Project Structure
+
+- `public/` - Contains all static assets and JavaScript files
+- `server.js` - Express server configuration
+- `index.html` - Main application entry point
